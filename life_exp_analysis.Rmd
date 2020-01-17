@@ -1,0 +1,15 @@
+---
+title: "Life Expectancy Analysis"
+author: "Andy Truong"
+date: "1/16/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Abstract
+
+Here we will reproduct the famous plot from Oppen and Vaupel (2002).
+
