@@ -18,6 +18,17 @@ Here we will reproduct the famous plot from Oppen and Vaupel (2002).
 Here we begin the analysis.
 
 ```{r}
+library(tidyverse)
+library("gapminder")
+data("gapminder_unfiltered")
 
+```
+
+```{r}
+gapminder_unfiltered %>%
+  group_by(year) %>%
+  filter(lifeExp == max(lifeExp)) %>%
+  arrange(year)-> gapminder_unfiltered_2
+  
 ```
 
